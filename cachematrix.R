@@ -18,13 +18,13 @@ makeCacheMatrix <- function(x = matrix()) {
       
       getinv <- function() I
       
-      list(st = set, get = get, setinv = setinv, getinv = getinv)
+      list(set = set, get = get, setinv = setinv, getinv = getinv)
       
 }
 
 
 ## This functions checks if the inverse was already calculated. If it was then
-##it returns it, otherwise it calculates it first, and then returns it.
+## it returns it, otherwise it calculates it first, and then returns it.
 
 cacheSolve <- function(x, ...) {
       
